@@ -55,3 +55,6 @@ classmethod-decorators = [
 [tool.ruff.pyupgrade]
 # Preserve types, even if a file imports `from __future__ import annotations`.
 keep-runtime-typing = true
+
+[tool.pytest.ini_options]
+addopts = "--cov=pyrat-zero --cov-report=term-missing"
